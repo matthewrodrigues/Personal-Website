@@ -1,0 +1,137 @@
+/* ============================================================
+   Page Header
+   ============================================================ */
+.page-header {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-md);
+}
+
+.page-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-top: var(--space-xs);
+}
+
+/* ============================================================
+   Education
+   ============================================================ */
+.edu {
+  border-top: 1px solid var(--color-border);
+}
+
+.edu__card {
+  margin-top: var(--space-md);
+}
+
+.edu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.edu__school {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.edu__degree {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+
+.edu__year {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+  padding-top: 3px;
+}
+
+.edu__notes {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-sm);
+}
+
+@media (max-width: 500px) {
+  .edu__header {
+    flex-direction: column;
+  }
+}
+
+/* ============================================================
+   Timeline
+   ============================================================ */
+.work {
+  border-top: 1px solid var(--color-border);
+}
+
+.timeline {
+  position: relative;
+  margin-top: var(--space-md);
+  padding-left: 28px;
+  border-left: 2px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.timeline__entry {
+  position: relative;
+}
+
+.timeline__dot {
+  position: absolute;
+  left: -36px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-bg);
+}
+
+.timeline__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.timeline__company {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.timeline__title {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.timeline__date {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+  padding-top: 4px;
+}
+
+.timeline__bullets {
+  list-style: disc;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 500px) {
+  .timeline__header {
+    flex-direction: column;
+  }
+}

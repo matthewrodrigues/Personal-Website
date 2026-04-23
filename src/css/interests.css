@@ -1,0 +1,180 @@
+/* ============================================================
+   Page Header
+   ============================================================ */
+.page-header {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-md);
+}
+
+.page-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-top: var(--space-xs);
+}
+
+.interests-heading {
+  margin-bottom: var(--space-md);
+  margin-top: var(--space-xs);
+}
+
+/* ============================================================
+   Cars
+   ============================================================ */
+.cars {
+  border-top: 1px solid var(--color-border);
+}
+
+.cars__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+}
+
+.car-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.car-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #2A2A30;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 255, 255, 0.02) 10px,
+    rgba(255, 255, 255, 0.02) 20px
+  );
+}
+
+.car-card__body {
+  padding: var(--space-sm);
+}
+
+.car-card__name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.car-card__note {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .cars__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cars__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   Lifting PRs
+   ============================================================ */
+.prs {
+  border-top: 1px solid var(--color-border);
+}
+
+.prs__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+}
+
+.pr-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md) var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  text-align: center;
+}
+
+.pr-card__lift {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.pr-card__weight {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.pr-card__unit {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+@media (max-width: 600px) {
+  .prs__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================================
+   Socials & Spotify
+   ============================================================ */
+.socials {
+  border-top: 1px solid var(--color-border);
+}
+
+.socials__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-muted);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.social-link:hover {
+  color: var(--color-primary);
+  border-color: var(--color-accent);
+}
+
+.social-link__icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Spotify */
+.spotify__placeholder {
+  background-color: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
